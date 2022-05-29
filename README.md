@@ -11,3 +11,5 @@ Disclaimer: I don't work for Apple. Any information you take from this README is
 sudo diskutil unmount /dev/disk1s2
 sudo fsck_hfs -f /dev/disk1s2
 ```
+
+`fsck_hfs` does not necessarily work for `APFS` file systems. Use `diskutil verifyVolume <volume>`, as `verifyVolume` uses `fsck_apfs` internally.
