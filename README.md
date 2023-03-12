@@ -13,3 +13,10 @@ sudo fsck_hfs -f /dev/disk1s2
 ```
 
 `fsck_hfs` does not necessarily work for `APFS` file systems. Use `diskutil verifyVolume <volume>`, as `verifyVolume` uses `fsck_apfs` internally.
+
+
+
+---
+
+`tmutil startbackup`
+`tmutil stopbackup`
